@@ -1,0 +1,7 @@
+3.14 is float
+t is T
+newT() is T
+q is float
+t is T
+t.f() is float
+q is float

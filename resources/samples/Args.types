@@ -1,0 +1,8 @@
+x is int
+y is float
+t is T
+newT() is T
+t is T
+34 is int
+3.14159 is float
+t.foo(34,3.14159) is void

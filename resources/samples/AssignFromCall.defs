@@ -1,0 +1,5 @@
+global
+    T
+        f
+            <f.this:global.T>
+    main

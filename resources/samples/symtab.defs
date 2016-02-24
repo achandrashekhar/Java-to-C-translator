@@ -1,0 +1,22 @@
+global
+    Employee
+        <Employee.ID:int>
+        getID
+            <getID.this:global.Employee>
+        setID
+            <setID.this:global.Employee>
+            <setID.ID:int>
+    Mgr
+        <Mgr.level:int>
+    Coder
+        <Coder.salary:float>
+        <Coder.boss:global.Mgr>
+        raise
+            <raise.this:global.Coder>
+            <raise.v:float>
+        speak
+            <speak.this:global.Coder>
+        workFor
+            <workFor.this:global.Coder>
+            <workFor.e:global.Employee>
+    main

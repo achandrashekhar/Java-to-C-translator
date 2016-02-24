@@ -1,0 +1,16 @@
+global
+    Employee
+        <Employee.number:int>
+        getID
+            <getID.this:global.Employee>
+        something
+            <something.this:global.Employee>
+    Mgr
+        <Mgr.level:int>
+        <Mgr.other:global.Employee>
+    Coder
+        <Coder.boss:global.Mgr>
+    Pro
+        getCoder
+            <getCoder.this:global.Pro>
+    main

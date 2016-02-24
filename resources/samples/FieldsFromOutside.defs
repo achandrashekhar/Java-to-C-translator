@@ -1,0 +1,5 @@
+global
+    T
+        <T.x:int>
+        <T.y:float>
+    main

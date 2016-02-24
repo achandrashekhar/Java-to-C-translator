@@ -1,0 +1,7 @@
+d is Dog
+newDog() is Dog
+d is Dog
+d.ID is int
+5 is int
+d is Dog
+d.ID is int

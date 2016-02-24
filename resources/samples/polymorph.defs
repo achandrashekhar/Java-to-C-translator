@@ -1,0 +1,11 @@
+global
+    Animal
+        <Animal.ID:int>
+        getID
+            <getID.this:global.Animal>
+        speak
+            <speak.this:global.Animal>
+    Dog
+        speak
+            <speak.this:global.Dog>
+    main

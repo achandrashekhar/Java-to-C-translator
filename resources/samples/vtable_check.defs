@@ -1,0 +1,13 @@
+global
+    Animal
+        foo
+            <foo.this:global.Animal>
+        getID
+            <getID.this:global.Animal>
+    Dog
+        getID
+            <getID.this:global.Dog>
+    Pekinese
+        getID
+            <getID.this:global.Pekinese>
+    main

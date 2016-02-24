@@ -1,0 +1,12 @@
+t is T
+newT() is T
+t is T
+t.x is int
+1 is int
+t is T
+t.y is float
+2 is int
+t is T
+t.x is int
+t is T
+t.y is float

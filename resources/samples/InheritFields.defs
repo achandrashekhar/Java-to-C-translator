@@ -1,0 +1,5 @@
+global
+    Animal
+        <Animal.ID:int>
+    Dog
+    main

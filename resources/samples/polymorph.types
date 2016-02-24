@@ -1,0 +1,10 @@
+ID is int
+getID() is int
+d is Dog
+newDog() is Dog
+a is Animal
+d is Dog
+a is Animal
+a.speak() is void
+d is Dog
+d.speak() is void

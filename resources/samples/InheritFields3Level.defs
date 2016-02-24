@@ -1,0 +1,6 @@
+global
+    Animal
+        <Animal.ID:int>
+    Dog
+    Pekinese
+    main

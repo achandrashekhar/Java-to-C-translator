@@ -1,0 +1,19 @@
+global
+    Vehicle
+        start
+            <start.this:global.Vehicle>
+        getColor
+            <getColor.this:global.Vehicle>
+    Car
+        start
+            <start.this:global.Car>
+        setDoors
+            <setDoors.this:global.Car>
+            <setDoors.n:int>
+    Truck
+        start
+            <start.this:global.Truck>
+        setPayload
+            <setPayload.this:global.Truck>
+            <setPayload.n:int>
+    main

@@ -1,0 +1,13 @@
+global
+    Animal
+        getID
+            <getID.this:global.Animal>
+    Dog
+        blort
+            <blort.this:global.Dog>
+    Pekinese
+        foo
+            <foo.this:global.Pekinese>
+        bar
+            <bar.this:global.Pekinese>
+    main

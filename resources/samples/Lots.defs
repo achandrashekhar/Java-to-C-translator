@@ -1,0 +1,11 @@
+global
+    T
+        <T.x:int>
+        <T.y:float>
+        foo
+            <foo.this:global.T>
+        bar
+            <bar.this:global.T>
+            <bar.x:int>
+            <bar.q:global.T>
+    main

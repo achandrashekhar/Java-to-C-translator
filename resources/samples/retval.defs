@@ -1,0 +1,6 @@
+global
+    T
+        foo
+            <foo.this:global.T>
+            <foo.x:float>
+    main

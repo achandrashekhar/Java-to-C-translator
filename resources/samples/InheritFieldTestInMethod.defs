@@ -1,0 +1,9 @@
+global
+    Animal
+        <Animal.ID:int>
+    Dog
+        speak
+            <speak.this:global.Dog>
+        speak2
+            <speak2.this:global.Dog>
+    main

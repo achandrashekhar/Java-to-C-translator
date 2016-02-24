@@ -1,0 +1,4 @@
+t is T
+newT() is T
+t is T
+t.foo() is void
