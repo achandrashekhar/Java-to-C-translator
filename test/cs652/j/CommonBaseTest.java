@@ -72,6 +72,16 @@ public abstract class CommonBaseTest {
 		return result;
 	}
 
+	protected Triple<Integer, String, String> exec(String[] cmd, String workingDir) throws IOException, InterruptedException {
+		ProcessBuilder pb = new ProcessBuilder();
+		pb.command(Arrays.asList(cmd)).directory(new File(workingDir));
+		Process process = pb.start();
+		int resultCode = process.waitFor();
+		String stdout = dump(process.getInputStream());
+		String stderr = dump(process.getErrorStream());
+		return new Triple<>(resultCode, stdout, stderr);
+	}
+
 	protected String dump(InputStream is) throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(is));
 		String line;
