@@ -39,7 +39,7 @@ public class TestCGen extends CommonBaseTest {
 		Utils.writeFile(workingDir+"/"+C_filename, C_code);
 
 		String[] indent_result_cmd = {
-			"gindent",
+			"indent",
 			"-bap", "-bad", "-br", "-nce", "-ncs", "-nprs", "-npcs", "-sai", "-saw",
 			"-di1", "-brs", "-blf", "--indent-level4", "-nut", "-sob", "-l200",
 			C_filename,
@@ -52,7 +52,7 @@ public class TestCGen extends CommonBaseTest {
 		// format the expected file as well
 		String expected_C_CodeFilename = testFolder+"/"+C_filename;
 		String[] indent_expected_cmd = {
-			"gindent",
+			"indent",
 			"-bap", "-bad", "-br", "-nce", "-ncs", "-nprs", "-npcs", "-sai", "-saw",
 			"-di1", "-brs", "-blf", "--indent-level4", "-nut", "-sob", "-l200",
 			expected_C_CodeFilename,
