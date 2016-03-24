@@ -13,7 +13,7 @@ typedef struct {
 } object;
 
 object *alloc(metadata *clazz) {
-    object *p = malloc(clazz->size);
+    object *p = calloc(1, clazz->size);
     p->clazz = clazz;
     return p;
 }
