@@ -92,4 +92,5 @@ int main(int argc, char *argv[])
 
     d = ((Pekinese *)alloc(&Pekinese_metadata));
     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Pekinese_foo_SLOT])(((Animal *)d)));
+    return 0;
 }

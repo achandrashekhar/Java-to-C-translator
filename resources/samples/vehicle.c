@@ -103,4 +103,5 @@ int main(int argc, char *argv[])
     (*(void (*)(Truck *))(*(t)->clazz->_vtable)[Truck_start_SLOT])(((Truck *)t));
     (*(void (*)(Truck *,int))(*(t)->clazz->_vtable)[Truck_setPayload_SLOT])(((Truck *)t),32);
     (*(void (*)(Vehicle *))(*(v)->clazz->_vtable)[Vehicle_start_SLOT])(((Vehicle *)v));
+    return 0;
 }

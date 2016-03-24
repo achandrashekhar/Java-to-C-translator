@@ -95,4 +95,5 @@ int main(int argc, char *argv[])
     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Pekinese_getID_SLOT])(((Animal *)d)));
     printf("%d\n", (*(int (*)(Pekinese *))(*(d)->clazz->_vtable)[Pekinese_foo_SLOT])(((Pekinese *)d)));
     printf("%d\n", (*(int (*)(Pekinese *))(*(d)->clazz->_vtable)[Pekinese_bar_SLOT])(((Pekinese *)d)));
+    return 0;
 }

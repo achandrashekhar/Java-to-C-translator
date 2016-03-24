@@ -41,4 +41,5 @@ int main(int argc, char *argv[])
     t->x = 1;
     t->y = 2;
     printf("%d %f\n", t->x, t->y);
+    return 0;
 }

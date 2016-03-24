@@ -65,4 +65,5 @@ int main(int argc, char *argv[])
     d = ((Pekinese *)alloc(&Pekinese_metadata));
     d->ID = 5;
     printf("%d\n", d->ID);
+    return 0;
 }

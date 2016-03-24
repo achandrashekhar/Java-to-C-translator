@@ -44,4 +44,5 @@ int main(int argc, char *argv[])
 
     t = ((T *)alloc(&T_metadata));
     (*(void (*)(T *,int,float))(*(t)->clazz->_vtable)[T_foo_SLOT])(((T *)t),34,3.14159);
+    return 0;
 }

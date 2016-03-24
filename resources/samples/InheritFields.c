@@ -52,4 +52,5 @@ int main(int argc, char *argv[])
     d = ((Dog *)alloc(&Dog_metadata));
     d->ID = 5;
     printf("%d\n", d->ID);
+    return 0;
 }

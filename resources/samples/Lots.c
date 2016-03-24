@@ -64,4 +64,5 @@ int main(int argc, char *argv[])
     u = ((T *)alloc(&T_metadata));
     u->x = 2;
     (*(int (*)(T *,int,T *))(*(t)->clazz->_vtable)[T_bar_SLOT])(((T *)t),99,((T *)u));
+    return 0;
 }

@@ -115,4 +115,5 @@ int main(int argc, char *argv[])
     c->boss->ID = 4;
     printf("%d\n", (*(int (*)(Employee *))(*(c->boss)->clazz->_vtable)[Mgr_getID_SLOT])(((Employee *)c->boss)));
     (*(void (*)(Coder *))(*(c)->clazz->_vtable)[Coder_speak_SLOT])(((Coder *)c));
+    return 0;
 }

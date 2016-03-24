@@ -45,4 +45,5 @@ metadata B_metadata = {"B", sizeof(B), &B_vtable};
 
 int main(int argc, char *argv[])
 {
+    return 0;
 }

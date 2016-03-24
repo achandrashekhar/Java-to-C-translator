@@ -66,4 +66,5 @@ int main(int argc, char *argv[])
     d->ID = 5;
     (*(void (*)(Dog *))(*(d)->clazz->_vtable)[Dog_speak_SLOT])(((Dog *)d));
     (*(void (*)(Dog *))(*(d)->clazz->_vtable)[Dog_speak2_SLOT])(((Dog *)d));
+    return 0;
 }

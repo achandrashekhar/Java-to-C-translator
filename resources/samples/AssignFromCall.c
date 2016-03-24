@@ -46,4 +46,5 @@ int main(int argc, char *argv[])
     t = ((T *)alloc(&T_metadata));
     q = (*(float (*)(T *))(*(t)->clazz->_vtable)[T_f_SLOT])(((T *)t));
     printf("%f\n", q);
+    return 0;
 }

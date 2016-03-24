@@ -47,4 +47,5 @@ int main(int argc, char *argv[])
     y = (*(float (*)(T *,float))(*(t)->clazz->_vtable)[T_foo_SLOT])(((T *)t),10.5);
     printf("%f\n", y);
     printf("%f\n", (*(float (*)(T *,float))(*(t)->clazz->_vtable)[T_foo_SLOT])(((T *)t),1.0));
+    return 0;
 }

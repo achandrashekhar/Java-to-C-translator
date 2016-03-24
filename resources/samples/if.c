@@ -24,4 +24,5 @@ int main(int argc, char *argv[])
 
     x = 1;
     if ( x ) printf("x is 1\n");
+    return 0;
 }

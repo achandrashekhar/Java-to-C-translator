@@ -81,4 +81,5 @@ int main(int argc, char *argv[])
     (*(void (*)(Dog *))(*(d)->clazz->_vtable)[Dog_speak_SLOT])(((Dog *)d));
     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Dog_getID_SLOT])(((Animal *)d)));
     printf("%d\n", d->ID);
+    return 0;
 }

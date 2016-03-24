@@ -27,4 +27,5 @@ int main(int argc, char *argv[])
         printf("x is 1\n");
         x = 0;
     }
+    return 0;
 }

@@ -48,4 +48,5 @@ int main(int argc, char *argv[])
     t->x = 1;
     t->y = 2.05;
     (*(void (*)(T *))(*(t)->clazz->_vtable)[T_foo_SLOT])(((T *)t));
+    return 0;
 }

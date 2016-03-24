@@ -76,4 +76,5 @@ int main(int argc, char *argv[])
     a = ((Animal *)d);
     (*(void (*)(Animal *))(*(a)->clazz->_vtable)[Animal_speak_SLOT])(((Animal *)a));
     (*(void (*)(Dog *))(*(d)->clazz->_vtable)[Dog_speak_SLOT])(((Dog *)d));
+    return 0;
 }

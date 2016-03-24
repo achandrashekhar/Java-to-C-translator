@@ -118,4 +118,5 @@ main(int argc, char *argv[])
     printf("%d\n", pro->boss->other->number);
     printf("%d\n", (*(int (*)(Employee *))(*(pro->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Employee *) pro->boss)));
     printf("%d\n", (*(int (*)(Employee *))(*(pro->boss)->clazz->_vtable)[Mgr_something_SLOT]) (((Employee *) pro->boss)));
+    return 0;
 }

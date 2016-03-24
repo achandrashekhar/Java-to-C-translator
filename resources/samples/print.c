@@ -22,4 +22,5 @@ int main(int argc, char *argv[])
 {
     printf("hello\n");
     printf("%d %f\n", 42, 3.14);
+    return 0;
 }

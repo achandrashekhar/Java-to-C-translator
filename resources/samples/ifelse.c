@@ -25,4 +25,5 @@ int main(int argc, char *argv[])
     x = 0;
     if ( x ) printf("x is 1\n");
     else printf("x is 2\n");
+    return 0;
 }
