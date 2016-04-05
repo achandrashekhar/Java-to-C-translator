@@ -12,7 +12,7 @@
 
 	<version>1.0</version>
 
-	<name>vtable semantic analysis</name>
+	<name>vtable code generation</name>
 	<description>Parse J, translate to C vtables</description>
 
 	<dependencies>
