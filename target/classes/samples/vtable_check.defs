@@ -1,0 +1,23 @@
+global
+    global.int
+    global.float
+    global.string
+    global.void
+    Animal
+        foo
+            <foo.this:global.Animal>
+            local
+        getID
+            <getID.this:global.Animal>
+            local
+    Dog
+        getID
+            <getID.this:global.Dog>
+            local
+    Pekinese
+        getID
+            <getID.this:global.Pekinese>
+            local
+    main
+        local
+            <local.d:global.Pekinese>

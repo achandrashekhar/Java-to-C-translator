@@ -1,0 +1,11 @@
+global
+    global.int
+    global.float
+    global.string
+    global.void
+    T
+        <T.x:global.int>
+        <T.y:global.float>
+    main
+        local
+            <local.t:global.T>

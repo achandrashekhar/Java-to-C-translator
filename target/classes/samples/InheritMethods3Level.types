@@ -1,0 +1,12 @@
+99 is int
+getID() is int
+this is Pekinese
+this.getID() is int
+d is Pekinese
+newPekinese() is Pekinese
+d is Pekinese
+d.getID() is int
+d is Pekinese
+d.foo() is int
+d is Pekinese
+d.bar() is int

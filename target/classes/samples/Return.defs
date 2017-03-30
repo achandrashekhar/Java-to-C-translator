@@ -1,0 +1,12 @@
+global
+    global.int
+    global.float
+    global.string
+    global.void
+    T
+        foo
+            <foo.this:global.T>
+            <foo.x:global.int>
+            local
+    main
+        local

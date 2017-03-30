@@ -1,0 +1,11 @@
+x is float
+t is T
+newT() is T
+y is float
+t is T
+10.5 is float
+t.foo(10.5) is float
+y is float
+t is T
+1.0 is float
+t.foo(1.0) is float

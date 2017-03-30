@@ -1,0 +1,9 @@
+global
+    global.int
+    global.float
+    global.string
+    global.void
+    A
+    B
+    main
+        local

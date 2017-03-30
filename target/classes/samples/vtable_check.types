@@ -1,0 +1,8 @@
+getID() is int
+1 is int
+2 is int
+3 is int
+d is Pekinese
+newPekinese() is Pekinese
+d is Pekinese
+d.foo() is int

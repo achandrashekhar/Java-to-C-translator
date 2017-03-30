@@ -1,0 +1,12 @@
+global
+    global.int
+    global.float
+    global.string
+    global.void
+    Animal
+        <Animal.ID:global.int>
+    Dog
+    Pekinese
+    main
+        local
+            <local.d:global.Pekinese>

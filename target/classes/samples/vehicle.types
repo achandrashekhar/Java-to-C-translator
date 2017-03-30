@@ -1,0 +1,12 @@
+9 is int
+t is Truck
+newTruck() is Truck
+v is Vehicle
+t is Truck
+t is Truck
+t.start() is void
+t is Truck
+32 is int
+t.setPayload(32) is void
+v is Vehicle
+v.start() is void

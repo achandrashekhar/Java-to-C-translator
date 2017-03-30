@@ -1,0 +1,26 @@
+global
+    global.int
+    global.float
+    global.string
+    global.void
+    Employee
+        <Employee.number:global.int>
+        getID
+            <getID.this:global.Employee>
+            local
+        something
+            <something.this:global.Employee>
+            local
+    Mgr
+        <Mgr.level:global.int>
+        <Mgr.other:global.Employee>
+    Coder
+        <Coder.boss:global.Mgr>
+    Pro
+        getCoder
+            <getCoder.this:global.Pro>
+            local
+                <local.c:global.Coder>
+    main
+        local
+            <local.pro:global.Pro>

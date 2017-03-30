@@ -1,0 +1,12 @@
+ID is int
+this is Dog
+this.ID is int
+d is Dog
+newDog() is Dog
+d is Dog
+d.ID is int
+5 is int
+d is Dog
+d.speak() is void
+d is Dog
+d.speak2() is void
