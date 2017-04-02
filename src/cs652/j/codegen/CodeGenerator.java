@@ -1,9 +1,9 @@
 package cs652.j.codegen;
 
 
-import cs652.j.codegen.model.CFile;
-import cs652.j.codegen.model.OutputModelObject;
+import cs652.j.codegen.model.*;
 import cs652.j.parser.JBaseVisitor;
+import cs652.j.parser.JParser;
 import cs652.j.semantics.JClass;
 import org.antlr.symtab.Scope;
 import org.antlr.v4.runtime.ParserRuleContext;

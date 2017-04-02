@@ -35,7 +35,7 @@ MainMethod(main,funcName,returnType,args,body) ::= <<
 Block(block, locals, instrs) ::= <<
 >>
 
-VarDef(var, type)   ::= ""
+VarDef(var, type)   ::= "a Vardef"
 
 FuncName(f)         ::= ""
 
