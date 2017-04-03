@@ -66,7 +66,7 @@ if( <condition> ) <stat>
 
 NullRef(n)          ::= "NULL"
 
-LiteralRef(lit)     ::= ""
+LiteralRef(lit)     ::= "<lit.name>"
 VarRef(v)           ::= "<v.name>"
 FieldRef(f, object) ::= ""
 ThisRef(t)          ::= "this"
