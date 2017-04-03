@@ -18,6 +18,11 @@ object *alloc(metadata *clazz) {
 }
 
 
-void main(int argc, char *argv[]){
-int x;=;
+int main(int argc, char *argv[])
+{
+    int x;
+
+    x = 1;
+    printf("%d\n", x);
+    return 0;
 }

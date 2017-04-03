@@ -8,5 +8,5 @@ import java.util.List;
  */
 public class Block extends Stat {
     @ModelElement public List<OutputModelObject> locals = new ArrayList<>();
-    @ModelElement public List<Stat> instrs;
+    @ModelElement public List<OutputModelObject> instrs;
 }

@@ -30,8 +30,9 @@ MethodDef(m,funcName,returnType,args,body) ::= <<
 >>
 
 MainMethod(main,funcName,returnType,args,body) ::= <<
-void main(int argc, char *argv[]){
+int main(int argc, char *argv[]){
 <body>
+return 0;
 }
 >>
 
@@ -48,9 +49,14 @@ FuncName(f)         ::= ""
 ObjectTypeSpec(o)   ::= ""
 PrimitiveTypeSpec(p)::= "<p.name>"
 
-AssignStat(a,left,right) ::="<left> = <right>"
+AssignStat(a,left,right) ::="
+
+<a.left> = <a.right>;"
 PrintStringStat(p)  ::= ""
-PrintStat(p,args)   ::= ""
+PrintStat(p,args)   ::= <<
+
+printf(<p.name>,<p.args>);
+>>
 CallStat(c,call)    ::= ""
 CtorCall(ctor)      ::= ""
 ReturnStat(r,expr)  ::= ""

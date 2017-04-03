@@ -1,6 +1,7 @@
 package cs652.j.codegen;
 
 
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import cs652.j.codegen.model.*;
 import cs652.j.parser.JBaseVisitor;
 import cs652.j.parser.JParser;
@@ -41,9 +42,35 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
 	@Override
 	public OutputModelObject visitMain(JParser.MainContext ctx) {
+//Code that works for int x;
 		MainMethod mainMethod = new MainMethod();
 		mainMethod.body = (Block) visit(ctx.block());
 		return mainMethod;
+
+
+
+
+//        MainMethod main = new MainMethod(); 
+//        List<JParser.BlockStatContext> blockStatements = (List<JParser.BlockStatContext>) ctx.block(); 
+//        for(JParser.BlockStatContext stat : blockStatements){ 
+//            main.statements.add( visitBlockStatement(stat)); 
+//        } 
+//        return main;
+
+
+//        MainMethod main = new MainMethod();
+//        List<JParser.BlockStatContext> blockStatements = (List<JParser.BlockStatContext>)ctx.block();
+//        for(JParser.BlockStatContext bs : blockStatements){
+//            if(visitBlockStatement(bs) instanceof VarDef){
+//                if(main.declarations == null)
+//                    main.declarations = new ArrayList<>();
+//                main.declarations.add((VarDef) visitBlockStatement(bs));
+//
+//            } else
+//                main.statements.add((Stat)visitBlockStatement(bs));
+//        }
+//        return main;
+
 	}
 
 	@Override
@@ -67,12 +94,57 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 		return var;
 	}
 
-	@Override
-	public OutputModelObject visitAssignStat(JParser.AssignStatContext ctx) {
-		AssignStat asStat = new AssignStat();
-		asStat.left = (Expr)visit(ctx.expression(0));
-		asStat.right = (Expr)visit(ctx.expression(1));
-		return asStat;
-	}
+    @Override
+    public OutputModelObject visitAssignStat(JParser.AssignStatContext ctx) {
+        AssignStat asStat = new AssignStat();
+//        asStat.left = (Expr) visit(ctx.expression(0));
+//        asStat.right = (Expr)visit(ctx.expression(1));
+        for(JParser.ExpressionContext expressionContext: ctx.expression()){
+            OutputModelObject outputModelObject = visit(expressionContext);
+            if(outputModelObject instanceof VarRef){
+                asStat.left = expressionContext.getText();
+            }
+            if(outputModelObject instanceof LiteralRef){
+                asStat.right = expressionContext.getText();
+            }
+        }
+        return asStat;
+    }
 
+
+
+//    @Override
+//    public OutputModelObject visitPrintStat(JParser.PrintStatContext ctx) {
+//
+//            PrintStat printStat = new PrintStat(ctx.STRING().getText());
+//            List<JParser.ExpressionContext> exprs= ctx.expressionList().expression();
+//            for(JParser.ExpressionContext arg : exprs){
+//                printStat.args.add((Expr) visit(arg));
+//            }
+//            return printStat;
+//
+//
+//    }
+
+
+    @Override
+    public OutputModelObject visitPrintStat(JParser.PrintStatContext ctx) {
+      PrintStat pStat = new PrintStat(ctx.STRING().getText());
+//        List<JParser.ExpressionContext> expressions = ctx.expressionList().expression();
+        for(JParser.ExpressionContext arg : ctx.expressionList().expression()) {
+            OutputModelObject outputModelObject = visit(arg);
+                pStat.args = arg.getText();
+        }
+        return pStat;
+    }
+
+    @Override
+    public OutputModelObject visitIdRef(JParser.IdRefContext ctx) {
+        return new VarRef(ctx.ID().getText());
+    }
+
+    @Override
+    public OutputModelObject visitLiteralRef(JParser.LiteralRefContext ctx) {
+        return new LiteralRef(ctx.getText());
+    }
 }

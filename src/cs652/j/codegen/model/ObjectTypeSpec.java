@@ -12,4 +12,5 @@ public class ObjectTypeSpec extends TypeSpec {
         this.type = type;
         this.id = id;
     }
+
 }
