@@ -49,13 +49,10 @@ FuncName(f)         ::= ""
 ObjectTypeSpec(o)   ::= ""
 PrimitiveTypeSpec(p)::= "<p.name>"
 
-AssignStat(a,left,right) ::="
-
-<a.left> = <a.right>;"
+AssignStat(a,left,right) ::= "<a.left> = <a.right>;"
 PrintStringStat(p)  ::= ""
 PrintStat(p,args)   ::= <<
-
-printf(<p.name>,<p.args>);
+printf(<p.name>,<args:{arg|<arg>};separator=", ">);
 >>
 CallStat(c,call)    ::= ""
 CtorCall(ctor)      ::= ""
@@ -68,7 +65,7 @@ IfElseStat(i,condition, stat, elseStat) ::= <<
 NullRef(n)          ::= "NULL"
 
 LiteralRef(lit)     ::= ""
-VarRef(v)           ::= ""
+VarRef(v)           ::= "<v.name>"
 FieldRef(f, object) ::= ""
 ThisRef(t)          ::= "this"
 MethodCall(m, receiver, receiverType, fptrType, args) ::= <<

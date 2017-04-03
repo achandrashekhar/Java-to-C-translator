@@ -8,8 +8,8 @@ import java.util.List;
  */
 public class PrintStat extends Stat {
     public @ModelElement String name;
-//    public @ModelElement List<OutputModelObject> args = new ArrayList<>();
-    public @ModelElement String args;
+    public @ModelElement List<OutputModelObject> args = new ArrayList<>();
+    //public @ModelElement String args;
     public PrintStat(String name){
         this.name = name;
 

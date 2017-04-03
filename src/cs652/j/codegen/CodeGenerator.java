@@ -6,6 +6,7 @@ import cs652.j.codegen.model.*;
 import cs652.j.parser.JBaseVisitor;
 import cs652.j.parser.JParser;
 import cs652.j.semantics.JClass;
+import cs652.j.semantics.JField;
 import org.antlr.symtab.Scope;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.stringtemplate.v4.STGroup;
@@ -131,10 +132,12 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     public OutputModelObject visitPrintStat(JParser.PrintStatContext ctx) {
       PrintStat pStat = new PrintStat(ctx.STRING().getText());
 //        List<JParser.ExpressionContext> expressions = ctx.expressionList().expression();
+        List<OutputModelObject> temp = new ArrayList<>();
         for(JParser.ExpressionContext arg : ctx.expressionList().expression()) {
-            OutputModelObject outputModelObject = visit(arg);
-                pStat.args = arg.getText();
+            OutputModelObject ar = visit(arg);
+            temp.add(ar);
         }
+        pStat.args = temp;
         return pStat;
     }
 
@@ -147,4 +150,9 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     public OutputModelObject visitLiteralRef(JParser.LiteralRefContext ctx) {
         return new LiteralRef(ctx.getText());
     }
+
+//    @Override
+//    public OutputModelObject visitIfStat(JParser.IfStatContext ctx) {
+//
+//    }
 }
