@@ -48,30 +48,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 		mainMethod.body = (Block) visit(ctx.block());
 		return mainMethod;
 
-
-
-
-//        MainMethod main = new MainMethod(); 
-//        List<JParser.BlockStatContext> blockStatements = (List<JParser.BlockStatContext>) ctx.block(); 
-//        for(JParser.BlockStatContext stat : blockStatements){ 
-//            main.statements.add( visitBlockStatement(stat)); 
-//        } 
-//        return main;
-
-
-//        MainMethod main = new MainMethod();
-//        List<JParser.BlockStatContext> blockStatements = (List<JParser.BlockStatContext>)ctx.block();
-//        for(JParser.BlockStatContext bs : blockStatements){
-//            if(visitBlockStatement(bs) instanceof VarDef){
-//                if(main.declarations == null)
-//                    main.declarations = new ArrayList<>();
-//                main.declarations.add((VarDef) visitBlockStatement(bs));
-//
-//            } else
-//                main.statements.add((Stat)visitBlockStatement(bs));
-//        }
-//        return main;
-
 	}
 
 	@Override
@@ -156,7 +132,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         IfStat ifStat = new IfStat();
         ifStat.condition = (Expr) visit(ctx.parExpression());
         ifStat.stat = (Stat) visit(ctx.statement(0));
-        //for if else stat, can only handle if-else
         if(ctx.statement(1) != null){
             IfElseStat ifElseStat = new IfElseStat();
             ifElseStat.condition = (Expr) visit(ctx.parExpression());
@@ -186,5 +161,13 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         //psStat.content = ctx.STRING_TYPE().getText();
         return psStat;
 
+    }
+
+    @Override
+    public OutputModelObject visitWhileStat(JParser.WhileStatContext ctx) {
+        WhileStat wStat = new WhileStat();
+        wStat.condition = (Expr) visit(ctx.parExpression());
+        wStat.stat = (Stat)visit(ctx.statement());
+        return wStat;
     }
 }
