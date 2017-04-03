@@ -50,16 +50,18 @@ ObjectTypeSpec(o)   ::= ""
 PrimitiveTypeSpec(p)::= "<p.name>"
 
 AssignStat(a,left,right) ::= "<a.left> = <a.right>;"
-PrintStringStat(p)  ::= ""
+PrintStringStat(p)  ::= "printf(<p.content>);"
 PrintStat(p,args)   ::= <<
 printf(<p.name>,<args:{arg|<arg>};separator=", ">);
 >>
 CallStat(c,call)    ::= ""
 CtorCall(ctor)      ::= ""
-ReturnStat(r,expr)  ::= ""
+ReturnStat(r,expr)  ::= "return <expr>;"
 WhileStat(w,condition, stat) ::= ""
-IfStat(i,condition, stat) ::= ""
+IfStat(i,condition, stat) ::= "if( <condition> )<stat>"
 IfElseStat(i,condition, stat, elseStat) ::= <<
+if( <condition> ) <stat>
+    else <elseStat>
 >>
 
 NullRef(n)          ::= "NULL"

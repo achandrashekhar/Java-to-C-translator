@@ -151,8 +151,40 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         return new LiteralRef(ctx.getText());
     }
 
-//    @Override
-//    public OutputModelObject visitIfStat(JParser.IfStatContext ctx) {
-//
-//    }
+    @Override
+    public OutputModelObject visitIfStat(JParser.IfStatContext ctx) {
+        IfStat ifStat = new IfStat();
+        ifStat.condition = (Expr) visit(ctx.parExpression());
+        ifStat.stat = (Stat) visit(ctx.statement(0));
+        //for if else stat, can only handle if-else
+        if(ctx.statement(1) != null){
+            IfElseStat ifElseStat = new IfElseStat();
+            ifElseStat.condition = (Expr) visit(ctx.parExpression());
+            ifElseStat.stat = (Stat) visit(ctx.statement(0));
+            ifElseStat.elseStat = (Stat) visit(ctx.statement(1));
+            return ifElseStat;
+        }
+        return ifStat;
+
+    }
+
+    @Override
+    public OutputModelObject visitParExpression(JParser.ParExpressionContext ctx) {
+        return visit(ctx.expression());
+    }
+
+    @Override
+    public OutputModelObject visitReturnStat(JParser.ReturnStatContext ctx) {
+        ReturnStat rStat = new ReturnStat();
+        rStat.expr = (Expr) visit(ctx.expression());
+        return rStat;
+    }
+
+    @Override
+    public OutputModelObject visitPrintStringStat(JParser.PrintStringStatContext ctx) {
+        PrintStringStat psStat = new PrintStringStat(ctx.STRING().getText());
+        //psStat.content = ctx.STRING_TYPE().getText();
+        return psStat;
+
+    }
 }
