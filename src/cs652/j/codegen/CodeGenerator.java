@@ -38,6 +38,10 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 		MainMethod main = (MainMethod) visit(ctx.main());
 		CFile cfile = new CFile(fileName);
 		cfile.main = main;
+        for(JParser.ClassDeclarationContext cdc : ctx.classDeclaration()){
+            OutputModelObject outputModelObject = visit(cdc);
+            cfile.classes.add((ClassDef) outputModelObject);
+        }
 		return cfile;
 	}
 
@@ -167,7 +171,13 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     public OutputModelObject visitWhileStat(JParser.WhileStatContext ctx) {
         WhileStat wStat = new WhileStat();
         wStat.condition = (Expr) visit(ctx.parExpression());
-        wStat.stat = (Stat)visit(ctx.statement());
+        wStat.stat = ctx.statement().getText();
         return wStat;
     }
+
+//    @Override
+//    public OutputModelObject visitClassDeclaration(JParser.ClassDeclarationContext ctx) {
+//
+//    }
+
 }
