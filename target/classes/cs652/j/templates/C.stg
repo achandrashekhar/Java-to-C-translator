@@ -24,9 +24,23 @@ object *alloc(metadata *clazz) {
 >>
 
 ClassDef(class, fields, methods, vtable) ::= <<
+// D e f i n e  C l a s s  <class.name>
+typedef struct {
+    metadata *clazz;
+  <fields>
+} <class.name>;
+
+
+void(*<class.name>_vtable[])() = {
+    <vtable:{f | &<f>};separator=", ">
+    };
+
+metadata <class.name>_metadata = {"<class.name>", sizeof(<class.name>), &<class.name>_vtable};
+<methods:{method|<method>};separator="\n">
 >>
 
 MethodDef(m,funcName,returnType,args,body) ::= <<
+<returnType> <m.funcName>((<args:{arg|<arg>}; separator=", ">))
 >>
 
 MainMethod(main,funcName,returnType,args,body) ::= <<
@@ -38,24 +52,25 @@ return 0;
 
 Block(block, locals, instrs) ::= <<
 <locals>
+<instrs>
 >>
 
 VarDef(var, type)   ::= <<
 <var.type> <var.id>;
 >>
 
-FuncName(f)         ::= ""
+FuncName(f)         ::= "<f.method.name>_<f.method.name>"
 
 ObjectTypeSpec(o)   ::= ""
 PrimitiveTypeSpec(p)::= "<p.name>"
 
-AssignStat(a,left,right) ::= "<a.left> = <a.right>;"
+AssignStat(a,left,right) ::= "<left> = <right>;"
 PrintStringStat(p)  ::= "printf(<p.content>);"
 PrintStat(p,args)   ::= <<
 printf(<p.name>,<args:{arg|<arg>};separator=", ">);
 >>
 CallStat(c,call)    ::= ""
-CtorCall(ctor)      ::= ""
+CtorCall(ctor)      ::= "((<ctor.className> *)alloc(&<ctor.className>_metadata))"
 ReturnStat(r,expr)  ::= "return <expr>;"
 WhileStat(w,condition, stat) ::= "while ( <condition> ) <w.stat>"
 IfStat(i,condition, stat) ::= "if( <condition> )<stat>"
@@ -68,7 +83,7 @@ NullRef(n)          ::= "NULL"
 
 LiteralRef(lit)     ::= "<lit.name>"
 VarRef(v)           ::= "<v.name>"
-FieldRef(f, object) ::= ""
+FieldRef(f, object) ::= "<object>-><f.fieldName>"
 ThisRef(t)          ::= "this"
 MethodCall(m, receiver, receiverType, fptrType, args) ::= <<
 >>

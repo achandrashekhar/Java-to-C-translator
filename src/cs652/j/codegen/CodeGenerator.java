@@ -1,7 +1,6 @@
 package cs652.j.codegen;
 
 
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
 import cs652.j.codegen.model.*;
 import cs652.j.parser.JBaseVisitor;
 import cs652.j.parser.JParser;
@@ -35,7 +34,8 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 	@Override
 	public OutputModelObject visitFile(JParser.FileContext ctx) {
 		currentScope = ctx.scope;
-		MainMethod main = (MainMethod) visit(ctx.main());
+        System.out.println(ctx.scope.getName());
+        MainMethod main = (MainMethod) visit(ctx.main());
 		CFile cfile = new CFile(fileName);
 		cfile.main = main;
         for(JParser.ClassDeclarationContext cdc : ctx.classDeclaration()){
@@ -58,8 +58,13 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 	public OutputModelObject visitBlock(JParser.BlockContext ctx) {
 		Block block = new Block();
 		for (JParser.StatementContext stat : ctx.statement()){
-			OutputModelObject smt = visit(stat);
-			block.locals.add(smt);
+		    if(stat instanceof JParser.LocalVarStatContext) {
+                OutputModelObject smt = visit(stat);
+                block.locals.add(smt);
+            } else {
+                OutputModelObject smt = visit(stat);
+                block.instrs.add(smt);
+            }
 		}
 		return block;
 	}
@@ -71,24 +76,32 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
 	@Override
 	public OutputModelObject visitLocalVariableDeclaration(JParser.LocalVariableDeclarationContext ctx) {
-		VarDef var = new VarDef(ctx.ID().getText(),ctx.jType().getText());
-		return var;
+
+		if(ctx.jType().getText().equalsIgnoreCase("float")||ctx.jType().getText().equalsIgnoreCase("int")){
+            VarDef var = new VarDef(ctx.ID().getText(),ctx.jType().getText());
+		    return var;
+        } else {
+            VarDef var = new VarDef("*" + ctx.ID().getText(),ctx.jType().getText());
+            return var;
+        }
+
 	}
 
     @Override
     public OutputModelObject visitAssignStat(JParser.AssignStatContext ctx) {
         AssignStat asStat = new AssignStat();
-//        asStat.left = (Expr) visit(ctx.expression(0));
-//        asStat.right = (Expr)visit(ctx.expression(1));
-        for(JParser.ExpressionContext expressionContext: ctx.expression()){
-            OutputModelObject outputModelObject = visit(expressionContext);
-            if(outputModelObject instanceof VarRef){
-                asStat.left = expressionContext.getText();
-            }
-            if(outputModelObject instanceof LiteralRef){
-                asStat.right = expressionContext.getText();
-            }
-        }
+
+        asStat.left = (Expr) visit(ctx.expression(0));
+        asStat.right = (Expr)visit(ctx.expression(1));
+//        for(JParser.ExpressionContext expressionContext: ctx.expression()){
+//            OutputModelObject outputModelObject = visit(expressionContext);
+//            if(outputModelObject instanceof VarRef){
+//                asStat.left = expressionContext.getText();
+//            }
+//            if(outputModelObject instanceof LiteralRef){
+//                asStat.right = expressionContext.getText();
+//            }
+//        }
         return asStat;
     }
 
@@ -128,7 +141,8 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
     @Override
     public OutputModelObject visitLiteralRef(JParser.LiteralRefContext ctx) {
-        return new LiteralRef(ctx.getText());
+
+	    return new LiteralRef(ctx.getText());
     }
 
     @Override
@@ -162,7 +176,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     @Override
     public OutputModelObject visitPrintStringStat(JParser.PrintStringStatContext ctx) {
         PrintStringStat psStat = new PrintStringStat(ctx.STRING().getText());
-        //psStat.content = ctx.STRING_TYPE().getText();
         return psStat;
 
     }
@@ -178,7 +191,69 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
 //    @Override
 //    public OutputModelObject visitClassDeclaration(JParser.ClassDeclarationContext ctx) {
-//
+//        ClassDef cdef = new ClassDef(ctx.name.getText());
+//        for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
+//            OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
+//            if(outputModelObject instanceof MethodDef)
+//            {
+//                cdef.methods.add((MethodDef) outputModelObject);
+//            }
+//        }
+//        return cdef;
 //    }
+//
+    @Override
+    public OutputModelObject visitMethodDeclaration(JParser.MethodDeclarationContext ctx) {
+	    currentScope = ctx.scope;
+        MethodDef methodDef = new MethodDef();
+        methodDef.funcName = ctx.ID().getText();
+//        methodDef.returnType = (TypeSpec) visit(ctx.jType());
+        List<VarDef> mArgs = new ArrayList<>();
+        VarDef varDef = new VarDef("this",ctx.getText());
+        mArgs.add(varDef);
+        if(ctx.formalParameters().formalParameterList() != null){
+            List<JParser.FormalParameterContext> parameters =
+                    ctx.formalParameters().formalParameterList().formalParameter();
+            for(int i=0; i<parameters.size(); i++){
+                mArgs.add((VarDef) visit(ctx.formalParameters().formalParameterList().formalParameter(i)));
+            }
+        }
+        methodDef.args = mArgs;
+        return methodDef;
+    }
 
+
+    @Override
+    public OutputModelObject visitClassDeclaration(JParser.ClassDeclarationContext ctx) {
+        ClassDef classDef = new ClassDef(ctx.ID(0).toString()); //name of the class
+//        classDef.name = ctx.ID(0).toString();
+        for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
+            OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
+            if(outputModelObject instanceof VarDef)
+            {
+                classDef.fields.add( (VarDef) outputModelObject);
+            }
+        }
+        return classDef;
+    }
+
+    @Override
+    public OutputModelObject visitFieldDeclaration(JParser.FieldDeclarationContext ctx) {
+        return new VarDef(ctx.ID().getText(),ctx.jType().getText());
+    }
+
+    @Override
+    public OutputModelObject visitCtorCall(JParser.CtorCallContext ctx) {
+        CtorCall ctorCall = new CtorCall();
+        ctorCall.className = ctx.ID().getText();
+        return ctorCall;
+    }
+
+    @Override
+    public OutputModelObject visitFieldRef(JParser.FieldRefContext ctx) {
+        FieldRef fieldRef = new FieldRef();
+        fieldRef.fieldName = ctx.ID().getText();
+        fieldRef.object = (Expr) visit(ctx.expression());
+        return fieldRef;
+    }
 }

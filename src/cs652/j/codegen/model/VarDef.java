@@ -1,6 +1,5 @@
 package cs652.j.codegen.model;
 
-import java.lang.reflect.Type;
 
 /**
  * Created by ashi on 3/31/17.
