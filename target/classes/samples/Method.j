@@ -4,4 +4,4 @@ class T {
 
 T t;
 t = new T();
-
+t.foo();
