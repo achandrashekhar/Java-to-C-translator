@@ -5,12 +5,16 @@ package cs652.j.codegen.model;
  */
 public class ObjectTypeSpec extends TypeSpec {
 
-    public String type;
-    public String id;
-
-    public ObjectTypeSpec(String type, String id) {
-        this.type = type;
-        this.id = id;
+//    public String type;
+//    public String id;
+//
+//    public ObjectTypeSpec(String type, String id) {
+//        this.type = type;
+//        this.id = id;
+//    }
+    public ObjectTypeSpec(String name){
+        super(name);
     }
+
 
 }

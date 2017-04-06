@@ -5,11 +5,16 @@ package cs652.j.codegen.model;
  */
 public class PrimitiveTypeSpec extends TypeSpec {
 
-    public String type;
-    public String id;
+//    public String type;
+//    public String id;
+//
+//    public PrimitiveTypeSpec(String type, String id) {
+//        this.type = type;
+//        this.id = id;
+//    }
 
-    public PrimitiveTypeSpec(String type, String id) {
-        this.type = type;
-        this.id = id;
-    }
+
+     public PrimitiveTypeSpec(String name){
+         super(name);
+     }
 }

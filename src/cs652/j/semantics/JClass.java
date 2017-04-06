@@ -15,4 +15,5 @@ public class JClass extends ClassSymbol {
 		super(name);
 		setDefNode(tree);
 	}
+
 }

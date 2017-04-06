@@ -9,13 +9,14 @@ public class FuncName extends OutputModelObject {
     public JMethod method;
 
     public String name;
-    public FuncName(JMethod method) {
+    public FuncName(JMethod method, String name) {
         this.method = method;
+        this.name = name;
     }
 
-    public String getClassName(){
-        return method.getEnclosingScope().toString();
-    }
+//    public String getClassName(){
+//        return method.getEnclosingScope().toString();
+//    }
 
     public String getMethodName(){
         return method.getName();

@@ -3,29 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="643ae6f5-ae99-4761-a8a2-4ade8594b7ed" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/CodeGenerator.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/CodeGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/AssignStat.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/AssignStat.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/Block.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/Block.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/ClassDef.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/ClassDef.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/CtorCall.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/CtorCall.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/FieldRef.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/FieldRef.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/FuncName.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/FuncName.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/MainMethod.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/MainMethod.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/MethodDef.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/MethodDef.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/VarDef.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/VarDef.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/VTable.class" afterPath="$PROJECT_DIR$/target/classes/cs652/j/codegen/model/VTable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/cs652/j/templates/C.stg" afterPath="$PROJECT_DIR$/resources/cs652/j/templates/C.stg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/samples/Assign.c" afterPath="$PROJECT_DIR$/resources/samples/Assign.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/samples/FieldsFromOutside.c" afterPath="$PROJECT_DIR$/resources/samples/FieldsFromOutside.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/samples/Method.j" afterPath="$PROJECT_DIR$/resources/samples/Method.j" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/AssignStat.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/AssignStat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/Block.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/Block.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/ClassDef.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/ClassDef.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/CtorCall.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/CtorCall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/FieldRef.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/FieldRef.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/MainMethod.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/MainMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodCall.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodCall.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/ObjectTypeSpec.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/ObjectTypeSpec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/PrimitiveTypeSpec.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/PrimitiveTypeSpec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/TypeSpec.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/TypeSpec.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/VTable.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/VTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/codegen/model/VarDef.java" afterPath="$PROJECT_DIR$/src/cs652/j/codegen/model/VarDef.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cs652/j/semantics/JClass.java" afterPath="$PROJECT_DIR$/src/cs652/j/semantics/JClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cs652/j/templates/C.stg" afterPath="$PROJECT_DIR$/target/classes/cs652/j/templates/C.stg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/samples/Assign.c" afterPath="$PROJECT_DIR$/target/classes/samples/Assign.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/samples/FieldsFromOutside.c" afterPath="$PROJECT_DIR$/target/classes/samples/FieldsFromOutside.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/samples/Method.j" afterPath="$PROJECT_DIR$/target/classes/samples/Method.j" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,30 +47,42 @@
       <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="7">
+              <caret line="229" column="46" lean-forward="false" selection-start-line="229" selection-start-column="46" selection-end-line="229" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#12680#12681#0" expanded="true" />
+                <element signature="e#12744#12745#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssignFromCall.j" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/samples/AssignFromCall.j">
+      <file leaf-file-name="Method.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/samples/Method.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="506">
+              <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FieldRef.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/FieldRef.java">
+      <file leaf-file-name="MethodDef.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FuncName.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -76,8 +91,8 @@
       <file leaf-file-name="J.g4" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grammars/cs652/j/parser/J.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="25" />
+            <state relative-caret-position="-662">
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -86,28 +101,8 @@
       <file leaf-file-name="C.stg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/cs652/j/templates/C.stg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="85" column="47" lean-forward="false" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldsFromOutside.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/samples/FieldsFromOutside.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldsFromOutside.j" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/samples/FieldsFromOutside.j">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="73">
+              <caret line="67" column="54" lean-forward="false" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -125,6 +120,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new Vard</find>
+      <find>visitclass</find>
+      <find>visitLocal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/cs652/j/semantics/JArg.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/semantics/JField.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/semantics/JVar.java" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/PrimitiveTypeSpec.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/IfStat.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/IfElseStat.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/CallStat.java" />
@@ -152,35 +148,41 @@
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/ThisRef.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/FuncPtrType.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/CFile.java" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/ObjectTypeSpec.java" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/TypeSpec.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/TypeCast.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/PrintStringStat.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/IdRef.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/Expr.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/OutputModelObject.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/LiteralRef.java" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/MainMethod.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/PrintStat.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/ReturnStat.java" />
         <option value="$PROJECT_DIR$/resources/samples/if.c" />
-        <option value="$PROJECT_DIR$/resources/samples/while.c" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/WhileStat.java" />
         <option value="$PROJECT_DIR$/resources/samples/print.c" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/VarDef.java" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/Block.java" />
-        <option value="$PROJECT_DIR$/resources/samples/Assign.c" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java" />
-        <option value="$PROJECT_DIR$/resources/samples/Args.c" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java" />
-        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/ClassDef.java" />
         <option value="$PROJECT_DIR$/resources/samples/TwoClasses.c" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/AssignStat.java" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/CtorCall.java" />
-        <option value="$PROJECT_DIR$/resources/samples/FieldsFromOutside.c" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/FieldRef.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/Block.java" />
+        <option value="$PROJECT_DIR$/resources/samples/Assign.c" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/MainMethod.java" />
+        <option value="$PROJECT_DIR$/resources/samples/Args.c" />
+        <option value="$PROJECT_DIR$/resources/samples/FieldsFromOutside.c" />
+        <option value="$PROJECT_DIR$/resources/samples/while.c" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/VTable.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/semantics/JClass.java" />
+        <option value="$PROJECT_DIR$/resources/samples/Method.j" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/ClassDef.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/MethodCall.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/TypeSpec.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/PrimitiveTypeSpec.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/ObjectTypeSpec.java" />
+        <option value="$PROJECT_DIR$/src/cs652/j/codegen/model/VarDef.java" />
         <option value="$PROJECT_DIR$/resources/cs652/j/templates/C.stg" />
         <option value="$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/resources/samples/Method.c" />
       </list>
     </option>
   </component>
@@ -227,9 +229,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
+    <option name="x" value="35" />
     <option name="y" value="23" />
-    <option name="width" value="1468" />
+    <option name="width" value="1513" />
     <option name="height" value="813" />
   </component>
   <component name="ProjectView">
@@ -251,6 +253,16 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vtable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="vtable" />
@@ -457,7 +469,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="cs652.j.JTran" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-inspect -print $PROJECT_DIR$/resources/samples/FieldsFromOutside.j" />
+      <option name="PROGRAM_PARAMETERS" value="-inspect -print $PROJECT_DIR$/resources/samples/Method.j" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -801,34 +813,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCGen - 2017.04.04 at 15h 52m 27s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 20h 23m 13s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 15h 53m 34s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 20h 28m 12s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 16h 39m 21s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 20h 29m 24s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 16h 53m 42s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 21h 13m 10s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 16h 54m 31s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 21h 13m 49s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 17h 09m 24s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 21h 16m 31s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 18h 50m 54s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 21h 16m 47s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 18h 57m 38s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 22h 02m 30s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 19h 11m 06s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 22h 08m 23s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCGen - 2017.04.04 at 20h 50m 06s.xml">
+    <history-entry file="TestCGen - 2017.04.05 at 22h 52m 06s.xml">
       <configuration name="TestCGen" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -842,14 +854,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="23" width="1468" height="813" extended-state="0" />
-    <editor active="false" />
+    <frame x="35" y="23" width="1513" height="813" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17110799" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16587356" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -864,9 +876,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15256588" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24123423" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20666213" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -885,7 +897,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>78</line>
+          <line>87</line>
           <properties />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -902,43 +914,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>51</line>
+          <line>57</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>93</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>94</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>130</line>
+          <line>147</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>189</line>
+          <line>206</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>68</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java</url>
-          <line>227</line>
+          <line>268</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -964,110 +976,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/samples/while.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/cs652/j/TestCGen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/deep_hier.j">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/print.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" lean-forward="false" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JVar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JPrimitiveType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JArg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/IfElseStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/WhileStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/print.j">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/IfStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/OutputModelObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1088,22 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/MainMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/LiteralRef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1156,38 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/Args.j">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/Assign.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/Return.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/samples/Return.j">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1196,49 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/TypeSpec.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/Args.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-          <folding>
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs652/j/JTran.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1261,47 +1082,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/TwoClasses.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/VarRef.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/VarDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/ClassDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,26 +1106,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/samples/FieldsFromOutside.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/samples/FieldsFromOutside.j">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grammars/cs652/j/parser/J.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -1353,18 +1122,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/cs652/j/templates/C.stg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="85" column="47" lean-forward="false" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/samples/qcall.j">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/LiteralRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1377,12 +1146,260 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/AssignFromCall.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/ComputeTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="80" column="61" lean-forward="false" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Assign.j">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/MainMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Args.j">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Args.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Assign.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/while.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/FieldsFromOutside.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/semantics/JClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Method.j">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Inherit.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="64" column="26" lean-forward="false" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/VTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/TwoClasses.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="48" column="1" lean-forward="false" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/ClassDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding>
+            <element signature="e#574#575#0" expanded="false" />
+            <element signature="e#610#611#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#752#753#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/MethodCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/FuncPtrType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/VarDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/ObjectTypeSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#324#325#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/PrimitiveTypeSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#336#337#0" expanded="false" />
+            <element signature="e#365#366#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/TypeSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/FuncName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/cs652/j/templates/C.stg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="67" column="54" lean-forward="false" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Return.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/model/MethodDef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grammars/cs652/j/parser/J.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-662">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/samples/Method.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="47" column="1" lean-forward="false" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs652/j/codegen/CodeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="7">
+          <caret line="229" column="46" lean-forward="false" selection-start-line="229" selection-start-column="46" selection-end-line="229" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#12680#12681#0" expanded="true" />
+            <element signature="e#12744#12745#0" expanded="true" />
           </folding>
         </state>
       </provider>

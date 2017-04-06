@@ -27,20 +27,26 @@ ClassDef(class, fields, methods, vtable) ::= <<
 // D e f i n e  C l a s s  <class.name>
 typedef struct {
     metadata *clazz;
-  <fields>
+  <fields:{field|<field>;}; separator="\n ">
 } <class.name>;
 
+<class.hashdefinelist:{hdl|<hdl>}; separator="\n ">
+
+<methods:{method|<method>};separator="\n">
 
 void(*<class.name>_vtable[])() = {
-    <vtable:{f | &<f>};separator=", ">
+    <vtable:{f | <f>};separator=", ">
     };
 
 metadata <class.name>_metadata = {"<class.name>", sizeof(<class.name>), &<class.name>_vtable};
-<methods:{method|<method>};separator="\n">
+
 >>
 
 MethodDef(m,funcName,returnType,args,body) ::= <<
-<returnType> <m.funcName>((<args:{arg|<arg>}; separator=", ">))
+<m.returnType> <m.funcName>(<args:{arg|<arg>}; separator=", ">)
+{
+<body>
+}
 >>
 
 MainMethod(main,funcName,returnType,args,body) ::= <<
@@ -51,17 +57,17 @@ return 0;
 >>
 
 Block(block, locals, instrs) ::= <<
-<locals>
+<locals:{local|<local>;}; separator="\n ">
 <instrs>
 >>
 
 VarDef(var, type)   ::= <<
-<var.type> <var.id>;
+<type> <var.id>
 >>
 
-FuncName(f)         ::= "<f.method.name>_<f.method.name>"
+FuncName(f)         ::= "(void (*)())&<f.name>_<f.method.name>"
 
-ObjectTypeSpec(o)   ::= ""
+ObjectTypeSpec(o)   ::= "<o.name> *"
 PrimitiveTypeSpec(p)::= "<p.name>"
 
 AssignStat(a,left,right) ::= "<left> = <right>;"
