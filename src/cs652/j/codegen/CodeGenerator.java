@@ -130,7 +130,7 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         else{
             typeSpec = new PrimitiveTypeSpec(jf.getType().getName());
         }
-
+        //do this to have something like this->x
         if(jf instanceof JField){
             idname = "this->"+idname;
         }
@@ -265,28 +265,28 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
         //add the fields from the parent
 
-//        List<FieldSymbol> parentFields = (List<FieldSymbol>) classDef.jclazz.getFields();
-//        for(FieldSymbol fieldSymbol : parentFields){
-//            TypeSpec typeSpec;
-//            if(isClassName(fieldSymbol.getType().getName())){
-//                typeSpec = new ObjectTypeSpec(fieldSymbol.getType().getName());
-//            }
-//            else{
-//                typeSpec = new PrimitiveTypeSpec(fieldSymbol.getType().getName());
-//            }
-//            VarDef parentField = new VarDef(fieldSymbol.getName(),typeSpec);
-//            classDef.fields.add(parentField);
-//        }
+        List<FieldSymbol> parentFields = (List<FieldSymbol>) classDef.jclazz.getFields();
+        for(FieldSymbol fieldSymbol : parentFields){
+            TypeSpec typeSpec;
+            if(isClassName(fieldSymbol.getType().getName())){
+                typeSpec = new ObjectTypeSpec(fieldSymbol.getType().getName());
+            }
+            else{
+                typeSpec = new PrimitiveTypeSpec(fieldSymbol.getType().getName());
+            }
+            VarDef parentField = new VarDef(fieldSymbol.getName(),typeSpec);
+            classDef.fields.add(parentField);
+        }
 
         //add fields from the current class
 
-        for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
-            OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
-            if(outputModelObject instanceof VarDef)
-            {
-                classDef.fields.add( (VarDef) outputModelObject);
-            }
-        }
+//        for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
+//            OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
+//            if(outputModelObject instanceof VarDef)
+//            {
+//                classDef.fields.add( (VarDef) outputModelObject);
+//            }
+//        }
 
         List<JParser.ClassBodyDeclarationContext> cbDeclaration = ctx.classBody().classBodyDeclaration();
         for(int i=0;i<cbDeclaration.size();i++){
