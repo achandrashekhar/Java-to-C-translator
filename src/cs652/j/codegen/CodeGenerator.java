@@ -7,9 +7,7 @@ import cs652.j.parser.JParser;
 import cs652.j.semantics.JClass;
 import cs652.j.semantics.JField;
 import cs652.j.semantics.JMethod;
-import org.antlr.symtab.MemberSymbol;
-import org.antlr.symtab.MethodSymbol;
-import org.antlr.symtab.Scope;
+import org.antlr.symtab.*;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.stringtemplate.v4.STGroup;
 import org.stringtemplate.v4.STGroupFile;
@@ -53,7 +51,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 	@Override
 	public OutputModelObject visitMain(JParser.MainContext ctx) {
 	    currentScope = ctx.scope;
-//Code that works for int x;
 		MainMethod mainMethod = new MainMethod();
 		mainMethod.body = (Block) visit(ctx.block());
         currentScope = currentScope.getEnclosingScope();
@@ -85,14 +82,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
 	@Override
 	public OutputModelObject visitLocalVariableDeclaration(JParser.LocalVariableDeclarationContext ctx) {
-
-//		if(ctx.jType().getText().equalsIgnoreCase("float")||ctx.jType().getText().equalsIgnoreCase("int")){
-//            VarDef var = new VarDef(ctx.ID().getText(),ctx.jType().getText());
-//		    return var;
-//        } else {
-//            VarDef var = new VarDef("*" + ctx.ID().getText(),ctx.jType().getText());
-//            return var;
-//        }
         TypeSpec typeSpec;
         if(isClassName(ctx.jType().getText())){
             typeSpec = new ObjectTypeSpec(ctx.jType().getText());
@@ -110,33 +99,8 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
         asStat.left = (Expr) visit(ctx.expression(0));
         asStat.right = (Expr)visit(ctx.expression(1));
-//        for(JParser.ExpressionContext expressionContext: ctx.expression()){
-//            OutputModelObject outputModelObject = visit(expressionContext);
-//            if(outputModelObject instanceof VarRef){
-//                asStat.left = expressionContext.getText();
-//            }
-//            if(outputModelObject instanceof LiteralRef){
-//                asStat.right = expressionContext.getText();
-//            }
-//        }
         return asStat;
     }
-
-
-
-//    @Override
-//    public OutputModelObject visitPrintStat(JParser.PrintStatContext ctx) {
-//
-//            PrintStat printStat = new PrintStat(ctx.STRING().getText());
-//            List<JParser.ExpressionContext> exprs= ctx.expressionList().expression();
-//            for(JParser.ExpressionContext arg : exprs){
-//                printStat.args.add((Expr) visit(arg));
-//            }
-//            return printStat;
-//
-//
-//    }
-
 
     @Override
     public OutputModelObject visitPrintStat(JParser.PrintStatContext ctx) {
@@ -206,33 +170,18 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         //Maven test
     }
 
-//    @Override
-//    public OutputModelObject visitClassDeclaration(JParser.ClassDeclarationContext ctx) {
-//        ClassDef cdef = new ClassDef(ctx.name.getText());
-//        for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
-//            OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
-//            if(outputModelObject instanceof MethodDef)
-//            {
-//                cdef.methods.add((MethodDef) outputModelObject);
-//            }
-//        }
-//        return cdef;
-//    }
-//
     @Override
     public OutputModelObject visitMethodDeclaration(JParser.MethodDeclarationContext ctx) {
 	    currentScope = ctx.scope;
         MethodDef methodDef = new MethodDef();
         methodDef.funcName = currentClass.getName()+"_"+ctx.ID().getText();
-//        System.out.println(currentScope.resolve(ctx.ID().getText()));
-//       methodDef.returnType = (TypeSpec) visit(ctx.jType());
         System.out.println(currentClass.getName());
        JMethod jMethod = (JMethod) currentScope.resolve(ctx.ID().getText());
         //System.out.println(jMethod.getType().getName());
         methodDef.returnType = jMethod.getType().getName();
         List<VarDef> mArgs = new ArrayList<>();
-//        VarDef varDef = new VarDef("*this",currentClass.getName());
 
+        //method args
         TypeSpec typeSpec;
         if(isClassName(currentClass.getName())){
             typeSpec = new ObjectTypeSpec(currentClass.getName());
@@ -240,8 +189,7 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         else {
             typeSpec = new PrimitiveTypeSpec(currentClass.getName());
         }
-        VarDef varDef = new VarDef("this",typeSpec);
-
+        VarDef varDef = new VarDef("this",typeSpec); //add *this
         mArgs.add(varDef);
         if(ctx.formalParameters().formalParameterList() != null){
             List<JParser.FormalParameterContext> parameters =
@@ -266,9 +214,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     public OutputModelObject visitClassDeclaration(JParser.ClassDeclarationContext ctx) {
 	    currentScope = ctx.scope;
 	    currentClass = (JClass) ctx.scope;
-//        ClassDef classDef = new ClassDef(ctx.ID(0).toString()); //name of the class
-//
-// classDef.name = ctx.ID(0).toString();
         ClassDef classDef = new ClassDef(currentClass);
         classDef.name = ctx.ID(0).toString();
         Set<MethodSymbol> visibleMethods = classDef.jclazz.getMethods();
@@ -300,14 +245,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
     @Override
     public OutputModelObject visitFieldDeclaration(JParser.FieldDeclarationContext ctx) {
-//        return new VarDef(ctx.ID().getText(),ctx.jType().getText());
-//        if(ctx.jType().getText().equalsIgnoreCase("float")||ctx.jType().getText().equalsIgnoreCase("int")){
-//            VarDef var = new VarDef(ctx.ID().getText(),ctx.jType().getText());
-//            return var;
-//        } else {
-//            VarDef var = new VarDef("*" + ctx.ID().getText(),ctx.jType().getText());
-//            return var;
-//        }
         TypeSpec typeSpec;
         if(isClassName(ctx.jType().getText())){
             typeSpec = new ObjectTypeSpec(ctx.jType().getText());
@@ -335,7 +272,6 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
     @Override
     public OutputModelObject visitFormalParameter(JParser.FormalParameterContext ctx) {
-//        return new VarDef(ctx.ID().getText(),ctx.jType().getText());
         TypeSpec typeSpec;
         if(isClassName(ctx.jType().getText())){
             typeSpec = new ObjectTypeSpec(ctx.jType().getText());
@@ -350,4 +286,9 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     public boolean isClassName(String typename) {
         return Character.isUpperCase(typename.charAt(0));
     }
+
+
+
+
+
 }
