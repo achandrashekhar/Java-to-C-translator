@@ -1,12 +1,14 @@
 package cs652.j.codegen;
 
 
+import com.sun.codemodel.internal.JType;
 import cs652.j.codegen.model.*;
 import cs652.j.parser.JBaseVisitor;
 import cs652.j.parser.JParser;
 import cs652.j.semantics.JClass;
 import cs652.j.semantics.JField;
 import cs652.j.semantics.JMethod;
+import cs652.j.semantics.JVar;
 import org.antlr.symtab.*;
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.stringtemplate.v4.STGroup;
@@ -274,19 +276,10 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
             else{
                 typeSpec = new PrimitiveTypeSpec(fieldSymbol.getType().getName());
             }
+            System.out.println("fieldSymbol is "+fieldSymbol.getName());
             VarDef parentField = new VarDef(fieldSymbol.getName(),typeSpec);
             classDef.fields.add(parentField);
         }
-
-        //add fields from the current class
-
-//        for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
-//            OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
-//            if(outputModelObject instanceof VarDef)
-//            {
-//                classDef.fields.add( (VarDef) outputModelObject);
-//            }
-//        }
 
         List<JParser.ClassBodyDeclarationContext> cbDeclaration = ctx.classBody().classBodyDeclaration();
         for(int i=0;i<cbDeclaration.size();i++){
@@ -385,9 +378,9 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
         MethodCall methodCall = new MethodCall(typeSpec3,functionname,jClass.getName());
 
-        Expr left = (Expr) visit(ctx.expression());
-        methodCall.receiver = left;
-        methodCall.receiverType = left.type;
+        Expr ls = (Expr) visit(ctx.expression());
+        methodCall.receiver = ls;
+        methodCall.receiverType = ls.type;
 
         FuncPtrType fpt = new FuncPtrType();
         TypeSpec t;
@@ -399,24 +392,24 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         }
         fpt.returnType = t;
 
-        fpt.argTypes.add(left.type);
+        fpt.argTypes.add(ls.type);
 
         if(ctx.expressionList()!=null){
             List<JParser.ExpressionContext> arguments = ctx.expressionList().expression();
-            TypeSpec t6;
+            TypeSpec tt2;
             for(int temp1 = 0;temp1<arguments.size();temp1++){
                 if(isClassName(arguments.get(temp1).type.getName())){
-                    t6 = new ObjectTypeSpec(arguments.get(temp1).type.getName());
+                    tt2 = new ObjectTypeSpec(arguments.get(temp1).type.getName());
                 }
                 else {
-                    t6 = new PrimitiveTypeSpec(arguments.get(temp1).type.getName());
+                    tt2 = new PrimitiveTypeSpec(arguments.get(temp1).type.getName());
                 }
-                fpt.argTypes.add(t6);
+                fpt.argTypes.add(tt2);
                 methodCall.args.add((Expr) visit(ctx.expressionList().expression(temp1)));
             }
         }
         methodCall.fptrType = fpt;
         return methodCall;
-
     }
+
 }
