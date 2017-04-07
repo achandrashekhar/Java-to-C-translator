@@ -281,6 +281,8 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
             classDef.fields.add(parentField);
         }
 
+        //add all methods
+
         List<JParser.ClassBodyDeclarationContext> cbDeclaration = ctx.classBody().classBodyDeclaration();
         for(int i=0;i<cbDeclaration.size();i++){
             if(ctx.classBody().classBodyDeclaration(i).methodDeclaration() != null){
@@ -412,4 +414,22 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         return methodCall;
     }
 
+    @Override
+    public OutputModelObject visitThisRef(JParser.ThisRefContext ctx) {
+        String idname = ctx.getText();
+        TypedSymbol jf = (TypedSymbol) currentScope.resolve(idname);
+        TypeSpec typeSpec;
+        if(isClassName(jf.getType().getName())){
+            typeSpec = new ObjectTypeSpec(jf.getType().getName());
+        }
+        else{
+            typeSpec = new PrimitiveTypeSpec(jf.getType().getName());
+        }
+        //do this to have something like this->x
+//        if(jf instanceof JField){
+//            idname = "this->"+idname;
+//        }
+
+        return new ThisRef((typeSpec));
+    }
 }
