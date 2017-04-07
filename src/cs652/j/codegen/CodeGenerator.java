@@ -104,7 +104,17 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         AssignStat asStat = new AssignStat();
 
         asStat.left = (Expr) visit(ctx.expression(0));
-        asStat.right = (Expr)visit(ctx.expression(1));
+     //   asStat.right = (Expr)visit(ctx.expression(1));
+
+        if(ctx.expression(0).type instanceof JClass
+                && !ctx.expression(0).type.getName().equals(ctx.expression(1).type.getName())){
+            TypeCast c = new TypeCast(new ObjectTypeSpec(ctx.expression(0).type.getName()));
+            c.expr = (Expr) visit(ctx.expression(1));
+            asStat.right = c;
+        }
+        else
+            asStat.right = (Expr) visit(ctx.expression(1));
+
         return asStat;
     }
 
