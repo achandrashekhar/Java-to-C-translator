@@ -1,7 +1,7 @@
 package cs652.j.codegen;
 
 
-import com.sun.codemodel.internal.JType;
+
 import cs652.j.codegen.model.*;
 import cs652.j.parser.JBaseVisitor;
 import cs652.j.parser.JParser;
