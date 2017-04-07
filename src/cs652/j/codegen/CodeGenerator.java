@@ -121,7 +121,7 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
     @Override
     public OutputModelObject visitIdRef(JParser.IdRefContext ctx) {
-        String idname = ctx.getText();
+        String idname = ctx.ID().getText();
         TypedSymbol jf = (TypedSymbol) currentScope.resolve(idname);
         TypeSpec typeSpec;
         if(isClassName(jf.getType().getName())){
@@ -129,6 +129,10 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         }
         else{
             typeSpec = new PrimitiveTypeSpec(jf.getType().getName());
+        }
+
+        if(jf instanceof JField){
+            idname = "this->"+idname;
         }
 
         return new VarRef(typeSpec,idname);
@@ -259,7 +263,22 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
             }
         }
 
-        List<FieldSymbol> parentFields = (List<FieldSymbol>) classDef.jclazz.getFields();
+        //add the fields from the parent
+
+//        List<FieldSymbol> parentFields = (List<FieldSymbol>) classDef.jclazz.getFields();
+//        for(FieldSymbol fieldSymbol : parentFields){
+//            TypeSpec typeSpec;
+//            if(isClassName(fieldSymbol.getType().getName())){
+//                typeSpec = new ObjectTypeSpec(fieldSymbol.getType().getName());
+//            }
+//            else{
+//                typeSpec = new PrimitiveTypeSpec(fieldSymbol.getType().getName());
+//            }
+//            VarDef parentField = new VarDef(fieldSymbol.getName(),typeSpec);
+//            classDef.fields.add(parentField);
+//        }
+
+        //add fields from the current class
 
         for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
             OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
