@@ -432,4 +432,39 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
         return new ThisRef((typeSpec));
     }
+
+    @Override
+    public OutputModelObject visitMethodCall(JParser.MethodCallContext ctx) {
+        FuncPtrType fpt = new FuncPtrType();
+        String methodName = ctx.ID().getText();
+        MethodSymbol methodSymbol = currentClass.resolveMethod(ctx.ID().getText());
+        TypeSpec typeSpec;
+        String typename = methodSymbol.getType().getName();
+        if(isClassName(typename)){
+            typeSpec = new ObjectTypeSpec(typename);
+        }
+        else {
+            typeSpec = new PrimitiveTypeSpec(typename);
+        }
+
+        fpt.returnType = typeSpec;
+
+
+         ThisRef thisRef= new ThisRef((typeSpec));
+
+        Expr ls = (Expr) visit(ctx.ID());
+
+        MethodCall methodCall = new MethodCall(typeSpec,methodName,currentClass.getName());
+
+//        methodCall.receiver = ls;
+        methodCall.receiverType = typeSpec;
+
+        methodCall.receiver = thisRef;
+        methodCall.fptrType = fpt;
+        fpt.argTypes.add(new ObjectTypeSpec(currentClass.getName()));
+        return methodCall;
+
+    }
+
+
 }

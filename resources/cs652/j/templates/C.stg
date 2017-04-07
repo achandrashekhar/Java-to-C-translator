@@ -98,4 +98,4 @@ MethodCall(m, receiver, receiverType, fptrType, args) ::= <<
 FuncPtrType(f, returnType, argTypes) ::= <<
 *(<returnType> (*)(<argTypes:{arg|<arg>};separator=", ">))
 >>
-TypeCast(cast, type, expr) ::= ""
+TypeCast(cast, type, expr) ::= "((<type>)<expr>)"
