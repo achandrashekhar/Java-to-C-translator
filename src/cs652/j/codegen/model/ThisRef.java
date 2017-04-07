@@ -3,10 +3,10 @@ package cs652.j.codegen.model;
 /**
  * Created by ashi on 4/1/17.
  */
-public class ThisRef extends VarRef {
+public class ThisRef  {
 
 
-    public ThisRef(String name) {
-        super(name);
-    }
+//    public ThisRef(String name) {
+//        super(name);
+//    }
 }

@@ -7,4 +7,8 @@ public class FieldRef extends Expr {
   public String fieldName;
   @ModelElement public Expr object;
 
+  public FieldRef(TypeSpec type){
+    super(type);
+  }
+
 }

@@ -5,6 +5,8 @@ package cs652.j.codegen.model;
  */
 public class LiteralRef extends Expr {
 public String name;
-    public LiteralRef(String name){this.name = name;}
+    public LiteralRef(TypeSpec type,String name){
+        super(type);
+        this.name = name;}
 
 }

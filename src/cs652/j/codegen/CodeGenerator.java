@@ -63,19 +63,23 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 	    currentScope = ctx.scope;
 		Block block = new Block();
 		for (JParser.StatementContext stat : ctx.statement()){
-		    if(stat instanceof JParser.LocalVarStatContext) {
-                OutputModelObject smt = visit(stat);
-                block.locals.add((VarDef) smt);
+		    OutputModelObject outputModelObject = visit(stat);
+		    if(outputModelObject instanceof VarDef) {
+                block.locals.add((VarDef) outputModelObject);
             } else {
-                OutputModelObject smt = visit(stat);
-                block.instrs.add((Stat) smt);
+                block.instrs.add((Stat) outputModelObject);
             }
 		}
 		currentScope = currentScope.getEnclosingScope();
 		return block;
 	}
 
-	@Override
+    @Override
+    public OutputModelObject visitBlockStat(JParser.BlockStatContext ctx) {
+        return visit(ctx.block());
+    }
+
+    @Override
 	public OutputModelObject visitLocalVarStat(JParser.LocalVarStatContext ctx) {
 		return visitLocalVariableDeclaration(ctx.localVariableDeclaration());
 	}
@@ -117,13 +121,33 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
     @Override
     public OutputModelObject visitIdRef(JParser.IdRefContext ctx) {
-        return new VarRef(ctx.ID().getText());
+        String idname = ctx.getText();
+        TypedSymbol jf = (TypedSymbol) currentScope.resolve(idname);
+        TypeSpec typeSpec;
+        if(isClassName(jf.getType().getName())){
+            typeSpec = new ObjectTypeSpec(jf.getType().getName());
+        }
+        else{
+            typeSpec = new PrimitiveTypeSpec(jf.getType().getName());
+        }
+
+        return new VarRef(typeSpec,idname);
+
     }
 
     @Override
     public OutputModelObject visitLiteralRef(JParser.LiteralRefContext ctx) {
+        String fname = ctx.getText();
+        TypeSpec typeSpec;
+        if(ctx.INT()!=null){
+            typeSpec = new PrimitiveTypeSpec(ctx.INT().getText());
+        }
+        else {
+            typeSpec = new PrimitiveTypeSpec(ctx.FLOAT().getText());
+        }
 
-	    return new LiteralRef(ctx.getText());
+        return new LiteralRef(typeSpec,fname);
+
     }
 
     @Override
@@ -165,7 +189,7 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
     public OutputModelObject visitWhileStat(JParser.WhileStatContext ctx) {
         WhileStat wStat = new WhileStat();
         wStat.condition = (Expr) visit(ctx.parExpression());
-        wStat.stat = ctx.statement().getText();
+        wStat.stat = (Stat)visit(ctx.statement());
         return wStat;
         //Maven test
     }
@@ -178,7 +202,17 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         System.out.println(currentClass.getName());
        JMethod jMethod = (JMethod) currentScope.resolve(ctx.ID().getText());
         //System.out.println(jMethod.getType().getName());
-        methodDef.returnType = jMethod.getType().getName();
+
+        TypeSpec typeSpec1;
+
+        if(isClassName(jMethod.getType().getName())){
+            typeSpec1 = new ObjectTypeSpec(jMethod.getType().getName());
+        }
+        else {
+            typeSpec1 = new PrimitiveTypeSpec(jMethod.getType().getName());
+        }
+
+        methodDef.returnType = typeSpec1;
         List<VarDef> mArgs = new ArrayList<>();
 
         //method args
@@ -225,6 +259,8 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
             }
         }
 
+        List<FieldSymbol> parentFields = (List<FieldSymbol>) classDef.jclazz.getFields();
+
         for(JParser.ClassBodyDeclarationContext classBodyDeclarationContext : ctx.classBody().classBodyDeclaration()){
             OutputModelObject outputModelObject = visit(classBodyDeclarationContext);
             if(outputModelObject instanceof VarDef)
@@ -257,15 +293,36 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
 
     @Override
     public OutputModelObject visitCtorCall(JParser.CtorCallContext ctx) {
-        CtorCall ctorCall = new CtorCall();
-        ctorCall.className = ctx.ID().getText();
+        String fname = ctx.ID().getText();
+        JClass jf = (JClass) currentScope.resolve(fname);
+        TypeSpec typeSpec;
+        if(isClassName(jf.getName())){
+            typeSpec = new ObjectTypeSpec(jf.getName());
+        }
+        else{
+            typeSpec = new PrimitiveTypeSpec(jf.getName());
+        }
+
+        CtorCall ctorCall = new CtorCall(typeSpec);
+        ctorCall.className = fname;
         return ctorCall;
     }
 
     @Override
     public OutputModelObject visitFieldRef(JParser.FieldRefContext ctx) {
-        FieldRef fieldRef = new FieldRef();
-        fieldRef.fieldName = ctx.ID().getText();
+        String fname = ctx.ID().getText();
+        JClass jc = (JClass) currentScope.resolve(ctx.expression().type.getName());
+        TypedSymbol typedSymbol = (TypedSymbol) jc.resolveMember(fname);
+        TypeSpec typeSpec;
+        if(isClassName(typedSymbol.getType().getName())){
+            typeSpec = new ObjectTypeSpec(typedSymbol.getType().getName());
+        }
+        else{
+            typeSpec = new PrimitiveTypeSpec(typedSymbol.getType().getName());
+        }
+
+        FieldRef fieldRef = new FieldRef(typeSpec);
+        fieldRef.fieldName = fname;
         fieldRef.object = (Expr) visit(ctx.expression());
         return fieldRef;
     }
@@ -287,8 +344,60 @@ public class CodeGenerator extends JBaseVisitor<OutputModelObject> {
         return Character.isUpperCase(typename.charAt(0));
     }
 
+    @Override
+    public OutputModelObject visitCallStat(JParser.CallStatContext ctx) {
+        CallStat callStat = new CallStat();
+        callStat.call = (Expr) visit(ctx.expression());
+        return callStat;
+    }
 
+    @Override
+    public OutputModelObject visitQMethodCall(JParser.QMethodCallContext ctx) {
+        String functionname = ctx.ID().getText();
+        JClass jClass = (JClass) currentScope.resolve(ctx.expression().type.getName());
+        JMethod jMethod = (JMethod) jClass.resolveMember(ctx.ID().getText());
+        TypeSpec typeSpec3;
+        if(isClassName(ctx.expression().type.getName())){
+            typeSpec3 = new ObjectTypeSpec(ctx.expression().type.getName());
+        }
+        else {
+            typeSpec3 = new PrimitiveTypeSpec(ctx.expression().type.getName());
+        }
 
+        MethodCall methodCall = new MethodCall(typeSpec3,functionname,jClass.getName());
 
+        Expr left = (Expr) visit(ctx.expression());
+        methodCall.receiver = left;
+        methodCall.receiverType = left.type;
 
+        FuncPtrType fpt = new FuncPtrType();
+        TypeSpec t;
+        if(isClassName(jMethod.getType().getName())){
+            t = new ObjectTypeSpec(jMethod.getType().getName());
+        }
+        else {
+            t = new PrimitiveTypeSpec(jMethod.getType().getName());
+        }
+        fpt.returnType = t;
+
+        fpt.argTypes.add(left.type);
+
+        if(ctx.expressionList()!=null){
+            List<JParser.ExpressionContext> arguments = ctx.expressionList().expression();
+            TypeSpec t6;
+            for(int temp1 = 0;temp1<arguments.size();temp1++){
+                if(isClassName(arguments.get(temp1).type.getName())){
+                    t6 = new ObjectTypeSpec(arguments.get(temp1).type.getName());
+                }
+                else {
+                    t6 = new PrimitiveTypeSpec(arguments.get(temp1).type.getName());
+                }
+                fpt.argTypes.add(t6);
+                methodCall.args.add((Expr) visit(ctx.expressionList().expression(temp1)));
+            }
+        }
+        methodCall.fptrType = fpt;
+        return methodCall;
+
+    }
 }

@@ -43,7 +43,7 @@ metadata <class.name>_metadata = {"<class.name>", sizeof(<class.name>), &<class.
 >>
 
 MethodDef(m,funcName,returnType,args,body) ::= <<
-<m.returnType> <m.funcName>(<args:{arg|<arg>}; separator=", ">)
+<returnType> <m.funcName>(<args:{arg|<arg>}; separator=", ">)
 {
 <body>
 }
@@ -75,10 +75,10 @@ PrintStringStat(p)  ::= "printf(<p.content>);"
 PrintStat(p,args)   ::= <<
 printf(<p.name>,<args:{arg|<arg>};separator=", ">);
 >>
-CallStat(c,call)    ::= ""
+CallStat(c,call)    ::= "<call>;"
 CtorCall(ctor)      ::= "((<ctor.className> *)alloc(&<ctor.className>_metadata))"
 ReturnStat(r,expr)  ::= "return <expr>;"
-WhileStat(w,condition, stat) ::= "while ( <condition> ) <w.stat>"
+WhileStat(w,condition, stat) ::= "while (<condition>) { <stat> }"
 IfStat(i,condition, stat) ::= "if( <condition> )<stat>"
 IfElseStat(i,condition, stat, elseStat) ::= <<
 if( <condition> ) <stat>
@@ -92,7 +92,10 @@ VarRef(v)           ::= "<v.name>"
 FieldRef(f, object) ::= "<object>-><f.fieldName>"
 ThisRef(t)          ::= "this"
 MethodCall(m, receiver, receiverType, fptrType, args) ::= <<
+(<fptrType>(*(<receiver>)->clazz->_vtable)[<m.className>_<m.methodName>_SLOT])(((<m.className> *)<receiver>)<args:{arg|,<arg>}>)
 >>
 
-FuncPtrType(f, returnType, argTypes) ::= ""
+FuncPtrType(f, returnType, argTypes) ::= <<
+*(<returnType> (*)(<argTypes:{arg|<arg>};separator=", ">))
+>>
 TypeCast(cast, type, expr) ::= ""
