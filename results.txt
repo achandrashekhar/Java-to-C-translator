@@ -7,8 +7,8 @@
 [INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ vtable ---
 [INFO] 
 [INFO] --- antlr4-maven-plugin:4.6:antlr4 (antlr) @ vtable ---
-[INFO] No grammars to process
 [INFO] ANTLR 4: Processing source directory /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/grammars
+[INFO] Processing grammar: cs652/j/parser/J.g4
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ vtable ---
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
@@ -26,7 +26,7 @@
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ vtable ---
 [INFO] Changes detected - recompiling the module!
-[INFO] Compiling 4 source files to /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/test-classes
+[INFO] Compiling 2 source files to /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/test-classes
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ vtable ---
 [INFO] Surefire report directory: /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/surefire-reports
@@ -35,7 +35,7 @@
  T E S T S
 -------------------------------------------------------
 Running cs652.j.TestCGen
-Working dir: /var/folders/93/9kzk2ccm8xj8k70059b28jk80000gp/T/junit397761197585076628
+Working dir: /var/folders/93/9kzk2ccm8xj8k70059b28jk80000gp/T/junit3350207784886840619
 global
 T
 size is 2
@@ -1080,7 +1080,7 @@ mismatch in template LiteralRef between arguments and @ModelElement fields: []!=
 mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
 mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
 mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
-Tests run: 52, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1.855 sec <<< FAILURE!
+Tests run: 52, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1.804 sec <<< FAILURE!
 testCGen[deep_hier.j](cs652.j.TestCGen)  Time elapsed: 0.029 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[125,126c125,126
 <     printf("%d\n", (*(int (*)(Employee *))(*(pro->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Employee *) pro->boss)));
@@ -1131,7 +1131,7 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[125,126c125,126
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCGen[Inherit.j](cs652.j.TestCGen)  Time elapsed: 0.021 sec  <<< FAILURE!
+testCGen[Inherit.j](cs652.j.TestCGen)  Time elapsed: 0.016 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[83c83
 <     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Dog_getID_SLOT]) (((Animal *) d)));
 ---
@@ -1179,7 +1179,7 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[83c83
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCGen[InheritMethods3Level.j](cs652.j.TestCGen)  Time elapsed: 0.014 sec  <<< FAILURE!
+testCGen[InheritMethods3Level.j](cs652.j.TestCGen)  Time elapsed: 0.019 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[72c72
 <     return (*(int (*)(Animal *))(*(this)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Animal *) this));
 ---
@@ -1235,7 +1235,7 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[72c72
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCGen[Lots.j](cs652.j.TestCGen)  Time elapsed: 0.019 sec  <<< FAILURE!
+testCGen[Lots.j](cs652.j.TestCGen)  Time elapsed: 0.018 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[69c69
 <     (*(int (*)(T *, int, T *))(*(t)->clazz->_vtable)[T_bar_SLOT]) (((T *) t), 99, ((T *) u));
 ---
@@ -1283,7 +1283,7 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[69c69
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCGen[symtab.j](cs652.j.TestCGen)  Time elapsed: 0.023 sec  <<< FAILURE!
+testCGen[symtab.j](cs652.j.TestCGen)  Time elapsed: 0.019 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[114c114
 <     printf("%d\n", (*(int (*)(Employee *))(*(c->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Employee *) c->boss)));
 ---
@@ -1330,7 +1330,7 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[114c114
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCGen[vehicle.j](cs652.j.TestCGen)  Time elapsed: 0.016 sec  <<< FAILURE!
+testCGen[vehicle.j](cs652.j.TestCGen)  Time elapsed: 0.015 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[52d51
 < #define Car_start_SLOT 0
 53a53
@@ -1389,7 +1389,7 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[52d51
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCGen[vtable_check.j](cs652.j.TestCGen)  Time elapsed: 0.015 sec  <<< FAILURE!
+testCGen[vtable_check.j](cs652.j.TestCGen)  Time elapsed: 0.016 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<[]> but was:<[92c92
 <     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Pekinese_foo_SLOT]) (((Animal *) d)));
 ---
@@ -1436,10 +1436,6 @@ org.junit.ComparisonFailure: expected:<[]> but was:<[92c92
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-Running cs652.j.TestExprTypes
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
-Running cs652.j.TestSymbolDefs
-Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
 
 Results :
 
@@ -1451,14 +1447,14 @@ Failed tests:   testCGen[deep_hier.j](cs652.j.TestCGen): expected:<[]> but was:<
   testCGen[vehicle.j](cs652.j.TestCGen): expected:<[]> but was:<[52d51(..)
   testCGen[vtable_check.j](cs652.j.TestCGen): expected:<[]> but was:<[92c92(..)
 
-Tests run: 104, Failures: 7, Errors: 0, Skipped: 0
+Tests run: 52, Failures: 7, Errors: 0, Skipped: 0
 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 3.893 s
-[INFO] Finished at: 2017-04-11T14:55:34-07:00
-[INFO] Final Memory: 18M/361M
+[INFO] Total time: 4.190 s
+[INFO] Finished at: 2017-04-11T16:16:52-07:00
+[INFO] Final Memory: 24M/373M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project vtable: There are test failures.
 [ERROR] 
