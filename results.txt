@@ -1,0 +1,1472 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building vtable code generation 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ vtable ---
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.6:antlr4 (antlr) @ vtable ---
+[INFO] No grammars to process
+[INFO] ANTLR 4: Processing source directory /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/grammars
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ vtable ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 131 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ vtable ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 51 source files to /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/classes
+[WARNING] /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/src/cs652/j/codegen/CodeGenerator.java: /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/src/cs652/j/codegen/CodeGenerator.java uses unchecked or unsafe operations.
+[WARNING] /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/src/cs652/j/codegen/CodeGenerator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ vtable ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ vtable ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ vtable ---
+[INFO] Surefire report directory: /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running cs652.j.TestCGen
+Working dir: /var/folders/93/9kzk2ccm8xj8k70059b28jk80000gp/T/junit397761197585076628
+global
+T
+size is 2
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+size is 2
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is number
+Employee
+Employee
+fieldSymbol is number
+fieldSymbol is level
+fieldSymbol is other
+fieldSymbol is number
+fieldSymbol is boss
+fieldSymbol is number
+fieldSymbol is boss
+Pro
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is number
+Employee
+Employee
+fieldSymbol is number
+fieldSymbol is level
+fieldSymbol is other
+fieldSymbol is number
+fieldSymbol is boss
+fieldSymbol is number
+fieldSymbol is boss
+Pro
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is x
+fieldSymbol is y
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is x
+fieldSymbol is y
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is x
+fieldSymbol is y
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is x
+fieldSymbol is y
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+Animal
+Animal
+fieldSymbol is ID
+Dog
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+Animal
+Animal
+fieldSymbol is ID
+Dog
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+fieldSymbol is ID
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+fieldSymbol is ID
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+fieldSymbol is ID
+fieldSymbol is ID
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+fieldSymbol is ID
+fieldSymbol is ID
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+fieldSymbol is ID
+Dog
+Dog
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+fieldSymbol is ID
+Dog
+Dog
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+Animal
+Dog
+Pekinese
+Pekinese
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+Animal
+Dog
+Pekinese
+Pekinese
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is x
+fieldSymbol is y
+T
+T
+size is 2
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is x
+fieldSymbol is y
+T
+T
+size is 2
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+Animal
+Animal
+fieldSymbol is ID
+Dog
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+Animal
+Animal
+fieldSymbol is ID
+Dog
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+T
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+global
+T
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+global
+T
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+T
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+Employee
+Employee
+size is 1
+fieldSymbol is ID
+fieldSymbol is level
+fieldSymbol is ID
+fieldSymbol is salary
+fieldSymbol is boss
+Coder
+size is 1
+Coder
+Coder
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+fieldSymbol is ID
+Employee
+Employee
+size is 1
+fieldSymbol is ID
+fieldSymbol is level
+fieldSymbol is ID
+fieldSymbol is salary
+fieldSymbol is boss
+Coder
+size is 1
+Coder
+Coder
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template FieldRef between arguments and @ModelElement fields: [object]!=[object, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+global
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+global
+Vehicle
+Vehicle
+Car
+Car
+size is 1
+Truck
+Truck
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+Vehicle
+Vehicle
+Car
+Car
+size is 1
+Truck
+Truck
+size is 1
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+type of funcName's model element isn't recognized: String
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+Animal
+Animal
+Dog
+Pekinese
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+Animal
+Animal
+Dog
+Pekinese
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template ThisRef between arguments and @ModelElement fields: []!=[type]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template ClassDef between arguments and @ModelElement fields: [vtable, methods, fields]!=[fields, methods, vtable, hashdefinelist]
+type of funcName's model element isn't recognized: String
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template CtorCall between arguments and @ModelElement fields: []!=[type]
+mismatch in template PrintStat between arguments and @ModelElement fields: [args]!=[name, args]
+mismatch in template MethodCall between arguments and @ModelElement fields: [fptrType, args, receiver, receiverType]!=[receiver, fptrType, args, receiverType, type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+global
+mismatch in template MainMethod between arguments and @ModelElement fields: [args, funcName, body, returnType]!=[statements, body, declarations]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template VarRef between arguments and @ModelElement fields: []!=[type]
+mismatch in template LiteralRef between arguments and @ModelElement fields: []!=[type]
+Tests run: 52, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 1.855 sec <<< FAILURE!
+testCGen[deep_hier.j](cs652.j.TestCGen)  Time elapsed: 0.029 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[125,126c125,126
+<     printf("%d\n", (*(int (*)(Employee *))(*(pro->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Employee *) pro->boss)));
+<     printf("%d\n", (*(int (*)(Employee *))(*(pro->boss)->clazz->_vtable)[Mgr_something_SLOT]) (((Employee *) pro->boss)));
+---
+>     printf("%d\n", (*(int (*)(Mgr *))(*(pro->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Mgr *) pro->boss)));
+>     printf("%d\n", (*(int (*)(Mgr *))(*(pro->boss)->clazz->_vtable)[Mgr_something_SLOT]) (((Mgr *) pro->boss)));
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testCGen[Inherit.j](cs652.j.TestCGen)  Time elapsed: 0.021 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[83c83
+<     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Dog_getID_SLOT]) (((Animal *) d)));
+---
+>     printf("%d\n", (*(int (*)(Dog *))(*(d)->clazz->_vtable)[Dog_getID_SLOT]) (((Dog *) d)));
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testCGen[InheritMethods3Level.j](cs652.j.TestCGen)  Time elapsed: 0.014 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[72c72
+<     return (*(int (*)(Animal *))(*(this)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Animal *) this));
+---
+>     return (*(int (*)(Pekinese *))(*(this)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Pekinese *) this));
+78c78
+<     return (*(int (*)(Animal *))(*(this)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Animal *) this));
+---
+>     return (*(int (*)(Pekinese *))(*(this)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Pekinese *) this));
+92c92
+<     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Animal *) d)));
+---
+>     printf("%d\n", (*(int (*)(Pekinese *))(*(d)->clazz->_vtable)[Pekinese_getID_SLOT]) (((Pekinese *) d)));
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testCGen[Lots.j](cs652.j.TestCGen)  Time elapsed: 0.019 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[69c69
+<     (*(int (*)(T *, int, T *))(*(t)->clazz->_vtable)[T_bar_SLOT]) (((T *) t), 99, ((T *) u));
+---
+>     (*(int (*)(T *, int, T *))(*(t)->clazz->_vtable)[T_bar_SLOT]) (((T *) t), 99, u);
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testCGen[symtab.j](cs652.j.TestCGen)  Time elapsed: 0.023 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[114c114
+<     printf("%d\n", (*(int (*)(Employee *))(*(c->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Employee *) c->boss)));
+---
+>     printf("%d\n", (*(int (*)(Mgr *))(*(c->boss)->clazz->_vtable)[Mgr_getID_SLOT]) (((Mgr *) c->boss)));
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testCGen[vehicle.j](cs652.j.TestCGen)  Time elapsed: 0.016 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[52d51
+< #define Car_start_SLOT 0
+53a53
+> #define Car_start_SLOT 0
+67c67
+< (void (*)())&Car_start, (void (*)())&Vehicle_getColor, (void (*)())&Car_setDoors};
+---
+> (void (*)())&Vehicle_getColor, (void (*)())&Car_start, (void (*)())&Car_setDoors};
+76d75
+< #define Truck_start_SLOT 0
+77a77
+> #define Truck_start_SLOT 0
+91c91
+< (void (*)())&Truck_start, (void (*)())&Vehicle_getColor, (void (*)())&Truck_setPayload};
+---
+> (void (*)())&Vehicle_getColor, (void (*)())&Truck_start, (void (*)())&Truck_setPayload};
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+testCGen[vtable_check.j](cs652.j.TestCGen)  Time elapsed: 0.015 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[92c92
+<     printf("%d\n", (*(int (*)(Animal *))(*(d)->clazz->_vtable)[Pekinese_foo_SLOT]) (((Animal *) d)));
+---
+>     printf("%d\n", (*(int (*)(Pekinese *))(*(d)->clazz->_vtable)[Pekinese_foo_SLOT]) (((Pekinese *) d)));
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at cs652.j.TestCGen.checkCGen(TestCGen.java:72)
+	at cs652.j.TestCGen.testCGen(TestCGen.java:20)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running cs652.j.TestExprTypes
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running cs652.j.TestSymbolDefs
+Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 sec
+
+Results :
+
+Failed tests:   testCGen[deep_hier.j](cs652.j.TestCGen): expected:<[]> but was:<[125,126c125,126(..)
+  testCGen[Inherit.j](cs652.j.TestCGen): expected:<[]> but was:<[83c83(..)
+  testCGen[InheritMethods3Level.j](cs652.j.TestCGen): expected:<[]> but was:<[72c72(..)
+  testCGen[Lots.j](cs652.j.TestCGen): expected:<[]> but was:<[69c69(..)
+  testCGen[symtab.j](cs652.j.TestCGen): expected:<[]> but was:<[114c114(..)
+  testCGen[vehicle.j](cs652.j.TestCGen): expected:<[]> but was:<[52d51(..)
+  testCGen[vtable_check.j](cs652.j.TestCGen): expected:<[]> but was:<[92c92(..)
+
+Tests run: 104, Failures: 7, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.893 s
+[INFO] Finished at: 2017-04-11T14:55:34-07:00
+[INFO] Final Memory: 18M/361M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project vtable: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /Users/parrt/grading/cs652/S17/vtable-achandrashekhar/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
